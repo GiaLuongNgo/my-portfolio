@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const profile = {
-  name: "Louis Ngo",
+  name: "Luong Ngo",
   title: "Software Engineer - Frontend",
   email: "luong.ngogia1997@gmail.com",
   phone: "+84823871997",
