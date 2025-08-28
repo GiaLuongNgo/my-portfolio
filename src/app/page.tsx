@@ -140,7 +140,7 @@ const projects = [
     client: "Rabbit Care",
     description: "Rabbit Finance - Personal Finance Management Application",
     team: 4,
-    position: "Senior Front End Developer",
+    position: "Front End Developer",
     responsibilities: [
       "Review Design (Figma) fully responsive",
       "Built structure for project (store, component, page, assets, API, plugins)",
