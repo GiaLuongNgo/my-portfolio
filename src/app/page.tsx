@@ -208,6 +208,7 @@ export default function Home() {
               alt="Profile photo"
               width={120}
               height={120}
+              loading="eager"
               className="rounded-xl border shadow-md object-cover bg-gray-100"
             />
           </div>
