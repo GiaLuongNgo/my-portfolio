@@ -69,9 +69,35 @@ const certifications = [
 ]
 
 const projects = [
+    {
+    name: "DMSX",
+    period: "12/2024 - 7/2025",
+    client: "Company under NDA policy",
+    description: "DMSX Document Management System",
+    team: 5,
+    position: "Senior Front End Developer (FE Lead)",
+    responsibilities: [
+      "Built structure for project (layouts, store, components, pages, assets, API query, plugins, husky, commitlint)",
+      "Followed designs (using Figma) to build UI (for Desktop, Mobile, Tablet), config the Tailwind CSS variables",
+      "Utilize styled-components for a modular and maintainable approach to styling React components",
+      "Ensure a consistent and aesthetically pleasing visual style throughout the application",
+      "Defined git-flow for the team to follow",
+      "Created Front-End web application with NextJS 15 page directory",
+      "Managing front-end components using Storybook",
+      "Implemented unit tests for new features using Jest and React testing library",
+      "Implemented UI components and layouts using Material-UI for a consistent and visually appealing design",
+      "Customize and style Material-UI components to align with the application's design guidelines",
+      "Integrate React Query for efficient data fetching and state management",
+      "Optimize queries to minimize data transfer and improve application performance",
+      "Review and evaluate the implementation of other team members",
+      "Promptly debug and troubleshoot issues, providing effective solutions",
+    ],
+    tech: ["Typescript, ReactJS, NextJS, React, ReactQuery, MUI, NextJs, styled components"],
+  },
+
   {
     name: "Smartbox Ecommerce",
-    period: "4/2022 - now",
+    period: "4/2023 - 12/2024",
     client: "Smartbox Group",
     description: "Ecommerce project (selling gift box)",
     team: 8,
@@ -90,40 +116,13 @@ const projects = [
     ],
     tech: ["Vue 2, Vue 3, Nuxt-bridge, Nuxt 3, i18n, pinia, Jest, Vitest, Cypress, Storybook, Gitlab-CI"],
   },
-  {
-    name: "DMSX",
-    period: "6/2023 - 5/2024",
-    client: "Company under NDA policy",
-    description: "DMSX Document Management System",
-    team: 5,
-    position: "Senior Front End Developer (FE Lead)",
-    responsibilities: [
-      "Built structure for project (layouts, store, components, pages, assets, API query, plugins, husky, commitlint)",
-      "Followed designs (using Figma) to build UI (for Desktop, Mobile, Tablet), config the Tailwind CSS variables",
-      "Utilize styled-components for a modular and maintainable approach to styling React components",
-      "Ensure a consistent and aesthetically pleasing visual style throughout the application",
-      "Defined git-flow for the team to follow",
-      "Implement unit testing and end-to-end testing strategies",
-      "Created Front-End web application with NextJS 13 page directory",
-      "Managing front-end components using Storybook",
-      "Implemented features, and styling for the website using Sass (SCSS) and StyledComponent",
-      "Implemented e2e tests for new features using Jest and React testing library",
-      "Implemented UI components and layouts using Material-UI for a consistent and visually appealing design",
-      "Customize and style Material-UI components to align with the application's design guidelines",
-      "Integrate React Query for efficient data fetching and state management",
-      "Optimize queries to minimize data transfer and improve application performance",
-      "Review and evaluate the implementation of other team members",
-      "Promptly debug and troubleshoot issues, providing effective solutions",
-    ],
-    tech: ["Typescript, ReactJS, NextJS, React, ReactQuery, MUI, NextJs, styled components"],
-  },
     {
     name: "Carma Australia",
-    period: "12/2022 - 5/2023",
+    period: "9/2022 - 4/2023",
     client: "Carma Australia",
     description: "Carma Used Cars - The Easy Way To Buy Used Cars",
     team: 5,
-    position: "Middle Front End Developer",
+    position: "Senior Front End Developer",
     responsibilities: [
       "Communicate effectively with different stakeholders from other countries to clear requirements before implementation",
       "Plan workloads for future implementation",
@@ -134,9 +133,25 @@ const projects = [
     ],
     tech: ["ReactJS, NextJS, GraphQL, Contentful"],
   },
+      {
+    name: "Osim International",
+    period: "5/2021 - 6/2022",
+    client: "Osim International",
+    description: "Osim International - Health and Wellness Products",
+    team: 5,
+    position: "Middle Front End Developer",
+    responsibilities: [
+      "Inspect Requirements and workflow of upcoming feature.",
+      "Coordinate with other teams to find best solutions for the project",
+      "Develop module with ReactJs + Redux",
+      "Follow the perfect pixel design from Figma to develop UI/UX of the website",
+      "Optimize code and Code review",
+    ],
+    tech: ["ReactJs, Redux, TypeScript, NestJs, Storybook, Git"],
+  },
   {
     name: "Rabbit Finance",
-    period: "8/2021 - 3/2022",
+    period: "8/2020 - 6/2021",
     client: "Rabbit Care",
     description: "Rabbit Finance - Personal Finance Management Application",
     team: 4,
@@ -149,7 +164,7 @@ const projects = [
       "Created component base to reuse",
       "Review pull request from other members",
     ],
-    tech: ["React, TypeScript, Redux, MUI , styled components"],
+    tech: ["React, TypeScript, Redux, MUI , styled components, RxJs Observable"],
   },
 ]
 
@@ -295,7 +310,7 @@ export default function Home() {
                   </div>
                   <div className="text-gray-700"><b>Technology in use:</b> {proj.tech.join(", ")}</div>
                 </div>
-                {i <= 1 && <div key='break' style={{ pageBreakBefore: "always" }}></div>}
+                {(i === 0 || i === 2) && <div key='break' style={{ pageBreakBefore: "always" }}></div>}
               </div>
             ))}
           </div>
